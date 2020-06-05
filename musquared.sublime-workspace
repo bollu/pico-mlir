@@ -1,0 +1,1221 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"DumpMLR",
+				"DumpMLIRLLVM"
+			],
+			[
+				"values",
+				"valuescur"
+			],
+			[
+				"rend",
+				"renderts"
+			],
+			[
+				"HUGS",
+				"HugsServerAPI"
+			],
+			[
+				"HU",
+				"HugsServerAPI"
+			],
+			[
+				"ar",
+				"arrays"
+			],
+			[
+				"to_",
+				"to_str_with_shape"
+			],
+			[
+				"to_st",
+				"to_string"
+			],
+			[
+				"focus",
+				"focusixs"
+			],
+			[
+				"ctx",
+				"ctxes"
+			],
+			[
+				"for",
+				"for\tFor Loop"
+			],
+			[
+				"detec",
+				"_detectLoopsRec"
+			],
+			[
+				"g_ca",
+				"g_cache"
+			],
+			[
+				"cach",
+				"cache_item_total_timestamp"
+			],
+			[
+				"g_cac",
+				"g_cache_use_time"
+			],
+			[
+				"cdata",
+				"cdata_cached"
+			],
+			[
+				"web",
+				"webserver"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/User/make-build.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 154.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"toglge side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"toggle side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"to spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"tabs to ",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"key bin",
+				"Preferences: Key Bindings"
+			],
+			[
+				"follow",
+				"Floobits - Follow User"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"line n",
+				"Sort Lines"
+			],
+			[
+				"word wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"syntax C",
+				"Set Syntax: C"
+			],
+			[
+				"syntax plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"men",
+				"View: Toggle Menu"
+			],
+			[
+				"hide me",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lisp",
+				"Set Syntax: Lisp"
+			],
+			[
+				"make",
+				"Build With: Make"
+			],
+			[
+				"make ",
+				"Build With: Make"
+			],
+			[
+				"spaces to ta",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"set syntax tex",
+				"Set Syntax: TeX"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"set syntax C",
+				"Set Syntax: C"
+			],
+			[
+				"minimap",
+				"View: Toggle Minimap"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"code folding",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"fold",
+				"Sublime Merge: Folder History"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"toggle min",
+				"View: Toggle Minimap"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"toggle c",
+				"Toggle Comment"
+			],
+			[
+				"toggle co",
+				"Toggle Comment"
+			],
+			[
+				"toglge co",
+				"Toggle Comment"
+			],
+			[
+				"toggle si",
+				"View: Toggle Side Bar"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"word ",
+				"Word Wrap: Toggle"
+			],
+			[
+				"toggls",
+				"View: Toggle Side Bar"
+			],
+			[
+				"wrod ",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"race",
+				"Set Syntax: Racket"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"default",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"toggle ta",
+				"View: Toggle Tabs"
+			],
+			[
+				"llvm",
+				"Set Syntax: LLVM"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"theme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"nstal",
+				"Package Control: Install Package"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"vintage",
+				"Vintageous: Reset"
+			],
+			[
+				"user pre",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"to space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Install Package Control"
+			],
+			[
+				"ident",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"inde",
+				"Indentation: Convert to Spaces"
+			]
+		],
+		"width": 551.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7",
+		"/home/bollu/work/mlir/musquared"
+	],
+	"file_history":
+	[
+		"/home/bollu/work/mlir/pico-mlir/makefile",
+		"/home/bollu/work/mlir/mlir-lean/lean-opt/CMakeLists.txt",
+		"/home/bollu/work/leanmlir/llvm-project/mlir/cmake/modules/AddMLIR.cmake",
+		"/home/bollu/work/leanmlir/llvm-project/mlir/tools/mlir-opt/CMakeLists.txt",
+		"/home/bollu/work/leanmlir/pico-mlir/mlir/LowerToLLVM.cpp",
+		"/home/bollu/work/leanmlir/pico-mlir/include/toy/GENERATED.Ops.h",
+		"/home/bollu/work/leanmlir/pico-mlir/include/toy/GENERATED.Ops.cpp",
+		"/home/bollu/work/leanmlir/pico-mlir/makefile",
+		"/home/bollu/work/leanmlir/pico-mlir/include/toy/Ops.h.inc",
+		"/home/bollu/work/leanmlir/pico-mlir/include/toy/Ops.cpp.inc",
+		"/home/bollu/work/mathemagic/declarative/minanim.js",
+		"/home/bollu/work/mathemagic/declarative/script.js",
+		"/home/bollu/work/mathemagic/declarative/index.md",
+		"/home/bollu/temp/discussion",
+		"/home/bollu/blog/lyndon-convex.md",
+		"/home/bollu/work/cp/generalized-flow.cpp",
+		"/home/bollu/work/cp/generalized-flow",
+		"/home/bollu/notes/advanced-algorithms/review.tex",
+		"/home/bollu/notes/advanced-algorithms/main.tex",
+		"/home/bollu/blog/README.md",
+		"/home/bollu/notes/advanced-algorithms/review.aux",
+		"/home/bollu/work/hugs/hugs/src/evaluator.c",
+		"/home/bollu/work/hugs/hugs/src/wasmmain.c",
+		"/home/bollu/work/manim/example_scenes.py",
+		"/home/bollu/work/hugs/hugs/src/input.c",
+		"/home/bollu/work/hugs/hugs/src/connect.h",
+		"/home/bollu/work/hugs/hugs/src/script.c",
+		"/home/bollu/work/hugs/hugs/src/static.c",
+		"/home/bollu/work/hugs/hugs/src/storage.c",
+		"/home/bollu/work/hugs/hugs/src/module.c",
+		"/home/bollu/work/hugs/hugs/src/opts.c",
+		"/home/bollu/work/hugs/hugs/src/hugs.c",
+		"/home/bollu/work/hugs/hugs/src/parser.y",
+		"/home/bollu/work/hugs/hugs/src/storage.h",
+		"/home/bollu/work/hugs/hugs/src/type.c",
+		"/home/bollu/work/hugs/hugs/src/prelude.h",
+		"/home/bollu/work/hugs/hugs/src/array.c",
+		"/home/bollu/README.md",
+		"/home/bollu/Downloads/css/bootstrap.css",
+		"/home/bollu/Downloads/css/bootstrap-grid.css",
+		"/home/bollu/Downloads/css/bootstrap.min.css",
+		"/home/bollu/work/ddg/index.html",
+		"/home/bollu/work/hugs/hugs/src/server.c",
+		"/home/bollu/work/sfdev/slf/SLFBasic.v",
+		"/home/bollu/work/hugs/hugs/src/server.h",
+		"/home/bollu/work/hugs/hugs/src/runhugs.c",
+		"/home/bollu/work/hugs/hugs/hugsdir/libraries/Prelude.hs",
+		"/home/bollu/work/hugs/hugs/libraries/Hugs/Prelude.hs",
+		"/home/bollu/work/hugs/hugs/src/AUTOGENERATED_PRELUDE.h",
+		"/home/bollu/work/hugs/hugs/src/dotnet/HugsServ.cpp",
+		"/home/bollu/work/hugs/hugs/src/HugsAPI.h",
+		"/home/bollu/work/hugs/hugs/src/runhugs-emcc.html",
+		"/home/bollu/work/hugs/hugs/src/script.h",
+		"/home/bollu/work/hugs/hugs/src/parser.c",
+		"/home/bollu/work/hugs/hugs/README.md",
+		"/home/bollu/work/hugs/hugs/src/evaluator.h",
+		"/home/bollu/work/hugs/hugs/src/epoc/epoc_input.h",
+		"/home/bollu/work/hugs/hugs/src/AUTOGENERATED_PRELUDE.c",
+		"/home/bollu/temp/scheck-tutorial/bin/scheck",
+		"/home/bollu/work/IIIT-H-Code/softwarefoundations/project/slides.tex",
+		"/home/bollu/work/IIIT-H-Code/softwarefoundations/project/report.tex",
+		"/home/bollu/Downloads/lean.diff",
+		"/home/bollu/work/hugs/hugs/src/machdep.c",
+		"/home/bollu/Documents/nomic-topbar.txt",
+		"/home/bollu/work/hugs/hugs/src/subst.c",
+		"/home/bollu/work/hugs/hugs/fptools/hslibs/lang/doc/StableName.sgml",
+		"/home/bollu/work/hugs/hugs/src/machdep.h",
+		"/home/bollu/work/hugs/hugs/src/builtin.c",
+		"/home/bollu/work/hugs/hugs/src/compiler.c",
+		"/home/bollu/work/hugs/hugs/src/options.h",
+		"/home/bollu/work/hugs/hugs/src/dotnet/options.h",
+		"/home/bollu/work/hugs/hugs/src/errors.h",
+		"/home/bollu/work/hugs/hugs/hugsdir/include/config.h",
+		"/home/bollu/notes/distributedsystems/main.md",
+		"/home/bollu/work/hugs/hugs/src/machine.c",
+		"/home/bollu/work/hugs/hugs/hugsdir/libraries/Hugs/Internals.hs",
+		"/home/bollu/work/hugs/hugs/include/GreenCard.h",
+		"/home/bollu/work/hugs/hugs/hugsdir/libraries/Control/Concurrent/MVar.hs",
+		"/home/bollu/work/hugs/hugs/docs/libraries-notes.txt",
+		"/home/bollu/work/hugs/hugs/demos/EvalRed.hs",
+		"/home/bollu/work/hugs/hugs/fptools/hslibs/util/Observe.lhs",
+		"/home/bollu/work/hugs/hugs/fptools/libraries/base/Data/IORef.hs",
+		"/home/bollu/work/hugs/hugs/fptools/libraries/OpenGL/Graphics/Rendering/OpenGL/GL/Evaluators.hs",
+		"/home/bollu/work/hugs/hugs/libraries/Hugs/ConcBase.hs",
+		"/home/bollu/work/hugs/hugs/docs/server.tex",
+		"/home/bollu/work/hugs/hugs/fptools/libraries/base/Control/Exception.hs",
+		"/home/bollu/work/hugs/hugs/fptools/hslibs/lang/Exception.hs",
+		"/home/bollu/work/hugs/hugs/hugsdir/libraries/Hugs/ConcBase.hs",
+		"/home/bollu/work/hugs/hugs/fptools/libraries/network/Network/Socket_hsc_make.c",
+		"/home/bollu/work/gametheory/README.md",
+		"/home/bollu/work/gametheory/src/adx/variants/twodaysgame/TwoDaysBidBundle.java",
+		"/home/bollu/work/gametheory/src/adx/variants/thirtydaysgame/FiveAgent.java",
+		"/home/bollu/work/hugs/hugs/MAKE",
+		"/home/bollu/work/gametheory/src/adx/variants/thirtydaysgame/SimpleThirtyDaysThirtyCampaignsAgent.java",
+		"/home/bollu/work/IIIT-H-Code/softwarefoundations/project/dining.v",
+		"/home/bollu/work/IIIT-H-Code/gametheory/report.md",
+		"/home/bollu/notes/gametheory/report-paper-social-choice-with-non-quasi-linear-utilities.md",
+		"/home/bollu/notes/gametheory/quiz",
+		"/home/bollu/work/hugs/hugs98-Nov2003/fptools/libraries/base/include/HsBase.h",
+		"/home/bollu/work/hugs/packages/base/include/HsBase.h",
+		"/home/bollu/work/hugs/packages/base/include/HsBaseConfig.h",
+		"/home/bollu/temp/rank-select.hs",
+		"/home/bollu/notes/distributedsystems/report/references.bib",
+		"/home/bollu/notes/distributedsystems/report/main.tex",
+		"/home/bollu/work/IIIT-H-Code/db5/samples/part2/output_2 .txt",
+		"/home/bollu/work/IIIT-H-Code/db5/samples/part2/output_1 .txt",
+		"/home/bollu/work/IIIT-H-Code/db5/samples/part2/input_1.txt",
+		"/home/bollu/work/IIIT-H-Code/db5/samples/part2/input_2.txt",
+		"/home/bollu/blog/fiction.md",
+		"/home/bollu/tmp/project-proposal.md",
+		"/home/bollu/work/alok-bollu/word2blank/word2fuzzy/compute-composition.cpp",
+		"/home/bollu/work/alok-bollu/word2blank/dataset-composition/annotations/en.filtered.csv",
+		"/home/bollu/work/alok-bollu/word2blank/dataset-composition/annotations/en.raw.csv",
+		"/home/bollu/blog/content/blog/why-i-like-algebra.md",
+		"/home/bollu/work/leanmlir/einstein/examples/apl2.ein",
+		"/home/bollu/work/leanmlir/einstein/examples/apl.ein",
+		"/home/bollu/work/toy/include/toy/Ops.cpp.inc",
+		"/home/bollu/work/toy/mlir/Dialect.cpp",
+		"/home/bollu/work/leanmlir/llvm-project/mlir/examples/toy/Ch2/CMakeLists.txt",
+		"/home/bollu/work/IIIT-H-Code/ds3/erl_crash.dump",
+		"/home/bollu/floobits/davean/machines/as_preplan.hs",
+		"/home/bollu/Downloads/github-recovery-codes (3).txt",
+		"/home/bollu/Downloads/github-recovery-codes.txt",
+		"/home/bollu/floobits/davean/machines/src/Data/Machine/Plan.hs",
+		"/home/bollu/floobits/davean/machines/src/Data/Machine/Pipe.hs",
+		"/home/bollu/floobits/davean/machines/src/Data/Machine/Stack.hs",
+		"/home/bollu/floobits/davean/machines/src/Data/Machine.hs",
+		"/home/bollu/floobits/davean/machines/src/Data/Machine/Is.hs"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 334.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 42.0
+	},
+	"input":
+	{
+		"height": 114.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 53.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "musquared.sublime-project",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"READ",
+				"pico-mlir/README.md"
+			],
+			[
+				"make",
+				"pico-mlir/makefile"
+			],
+			[
+				"Lower",
+				"pico-mlir/mlir/LowerToLLVM.cpp"
+			],
+			[
+				"README",
+				"pico-mlir/README.md"
+			],
+			[
+				"modu",
+				"module.c"
+			],
+			[
+				"scrit",
+				"script.c"
+			],
+			[
+				"wasmm",
+				"wasmmain.c"
+			],
+			[
+				"wasm",
+				"wasmmain.c"
+			],
+			[
+				"prelude",
+				"prelude.h"
+			],
+			[
+				"module",
+				"module.c"
+			],
+			[
+				"script",
+				"script.c"
+			],
+			[
+				"module.c",
+				"module.c"
+			],
+			[
+				"obser",
+				"observablehq.html"
+			],
+			[
+				"server",
+				"src/server.c"
+			],
+			[
+				"Prelude",
+				"libraries/Hugs/Prelude.hs"
+			],
+			[
+				"Prelu",
+				"hugsdir/libraries/Prelude.hs"
+			],
+			[
+				"AUTO",
+				"src/AUTOGENERATED_PRELUDE.h"
+			],
+			[
+				"was",
+				"src/wasmmain.c"
+			],
+			[
+				"script.h",
+				"src/script.h"
+			],
+			[
+				"ser",
+				"src/server.c"
+			],
+			[
+				"server.h",
+				"src/server.h"
+			],
+			[
+				"wasmma",
+				"src/wasmmain.c"
+			],
+			[
+				"wammain",
+				"src/wasmmain.c"
+			],
+			[
+				"server.c",
+				"src/server.c"
+			],
+			[
+				"Prelude.hs",
+				"hugsdir/libraries/Prelude.hs"
+			],
+			[
+				"script.c",
+				"src/script.c"
+			],
+			[
+				"input.c",
+				"src/input.c"
+			],
+			[
+				"input.h",
+				"src/epoc/epoc_input.h"
+			],
+			[
+				"serverc",
+				"src/server.c"
+			],
+			[
+				"evaluator",
+				"src/evaluator.c"
+			],
+			[
+				"storage.h",
+				"src/storage.h"
+			],
+			[
+				"machde",
+				"src/machdep.c"
+			],
+			[
+				"stora",
+				"src/storage.c"
+			],
+			[
+				"wasmmain",
+				"src/wasmmain.c"
+			],
+			[
+				"option",
+				"src/options.h"
+			],
+			[
+				"runhugs.c",
+				"src/runhugs.c"
+			],
+			[
+				"hugs.c",
+				"src/hugs.c"
+			],
+			[
+				"main.c",
+				"src/machine.c"
+			],
+			[
+				"TVar",
+				"fptools/libraries/OpenGL/Graphics/Rendering/OpenGL/GL/Evaluators.hs"
+			],
+			[
+				"ConcBase",
+				"libraries/Hugs/ConcBase.hs"
+			],
+			[
+				"mvar",
+				"demos/EvalRed.hs"
+			],
+			[
+				"simplethir",
+				"src/adx/variants/thirtydaysgame/SimpleThirtyDaysThirtyCampaignsAgent.java"
+			],
+			[
+				"simple",
+				"adx/variants/thirtydaysgame/SimpleThirtyDaysThirtyCampaignsAgent.java"
+			],
+			[
+				"hsbase",
+				"fptools/libraries/base/include/HsBase.h"
+			],
+			[
+				"Maybe",
+				"libraries/bootlib/Data/Maybe.hs"
+			],
+			[
+				"unix",
+				"docs/building/unix.txt"
+			],
+			[
+				"preio",
+				"packages/base/cbits/PrelIOUtils.c"
+			],
+			[
+				"hsffi.h",
+				"src/HsFFI.h"
+			],
+			[
+				"error.c",
+				"libraries/bootlib/Foreign/C/Error.c"
+			],
+			[
+				"hsbaseconf",
+				"packages/base/include/HsBaseConfig.h"
+			],
+			[
+				"HsFFI",
+				"src/HsFFI.h"
+			],
+			[
+				"HsBase",
+				"packages/base/include/HsBase.h"
+			],
+			[
+				"PreI",
+				"packages/base/cbits/PrelIOUtils.c"
+			],
+			[
+				"out",
+				"part2/output_2 .txt"
+			],
+			[
+				"inp",
+				"part2/input_2.txt"
+			],
+			[
+				"part2/o",
+				"part2/output_1 .txt"
+			],
+			[
+				"par",
+				"part2/input_1.txt"
+			],
+			[
+				"x=3",
+				"samples/part1/x=3.txt"
+			],
+			[
+				"test1",
+				"x=3-test1"
+			],
+			[
+				"type.hs",
+				"src/Data/Machine/Type.hs"
+			],
+			[
+				"Wye",
+				"src/Data/Machine/Wye.hs"
+			],
+			[
+				"Tee",
+				"src/Data/Machine/Tee.hs"
+			],
+			[
+				"wye",
+				"src/Data/Machine/Wye.hs"
+			],
+			[
+				"Is.",
+				"src/Data/Machine/Is.hs"
+			],
+			[
+				"Macine",
+				"src/Data/Machine.hs"
+			],
+			[
+				"plan",
+				"src/Data/Machine/Plan.hs"
+			],
+			[
+				"main.hs",
+				"src/Data/Machine/Plan.hs"
+			],
+			[
+				"inc",
+				"incunabulum-mine.c"
+			],
+			[
+				"incu",
+				"incunabulum.c"
+			],
+			[
+				"in",
+				"incunabulum.c"
+			],
+			[
+				"",
+				"rnn.cpp"
+			],
+			[
+				"makef",
+				"makefile"
+			],
+			[
+				"rnn",
+				"rnn.cpp"
+			],
+			[
+				"plot-trace-histogram",
+				"paper-data/plot-trace-histogram-runtime.py"
+			],
+			[
+				"paper",
+				"paper-automatic-accelerator-generation-with-unified-memory.tex"
+			],
+			[
+				".bib",
+				"references.bib"
+			],
+			[
+				"scophelp",
+				"lib/Support/ScopHelper.cpp"
+			],
+			[
+				"scopdetecto",
+				"lib/Analysis/ScopDetection.cpp"
+			],
+			[
+				"scop",
+				"lib/Analysis/ScopDetection.cpp"
+			],
+			[
+				"scopbuil",
+				"lib/Analysis/ScopBuilder.cpp"
+			],
+			[
+				"scopinfo.cpp",
+				"lib/Analysis/ScopInfo.cpp"
+			],
+			[
+				"scopinfo.",
+				"include/polly/ScopInfo.h"
+			],
+			[
+				"main.cpp",
+				"src/main.cpp"
+			],
+			[
+				"gitn",
+				".gitignore"
+			],
+			[
+				"main",
+				"src/Main"
+			],
+			[
+				".gitig",
+				".gitignore"
+			],
+			[
+				"src/main.cpp",
+				"src/main.cpp"
+			],
+			[
+				"docker",
+				"nvprof-outside-docker"
+			],
+			[
+				"1-p",
+				"1-polly-on-linked.s-and-link.sh"
+			],
+			[
+				"SCIss",
+				"SCIssues.md"
+			],
+			[
+				"sccna",
+				"SCChanges.md"
+			],
+			[
+				"abstract inter ",
+				"paper/abstract-interpretation-only.tex"
+			],
+			[
+				"abstra",
+				"paper/verified-proofs/coq/AbstractInterpret.v"
+			],
+			[
+				"appen",
+				"paper/appendix.tex"
+			],
+			[
+				"appendix.tex",
+				"paper/appendix.tex"
+			],
+			[
+				"abstractinter",
+				"paper/verified-proofs/coq/AbstractInterpret.v"
+			],
+			[
+				"pape",
+				"paper/paper-efficient-abstract-interpretation-on-low-level-ir.tex"
+			],
+			[
+				"append",
+				"paper/appendix.tex"
+			],
+			[
+				"paper-eff",
+				"paper/paper-efficient-abstract-interpretation-on-low-level-ir.tex"
+			],
+			[
+				"semantics.tex",
+				"semantics-separate-writeup/semantics.tex"
+			],
+			[
+				"main.tex",
+				"paper/main.tex"
+			],
+			[
+				"paper.tex",
+				"paper/paper-efficient-abstract-interpretation-on-low-level-ir.tex"
+			],
+			[
+				"se",
+				"~/work/paper-polyhedral-value-analysis/semantics-separate-writeup/semantics.tex"
+			],
+			[
+				"inter",
+				"interpreter.rkt"
+			],
+			[
+				"qu",
+				"question-interpreter.rkt"
+			],
+			[
+				"harpr",
+				"submissions/20172115_Harpreet Singh Arora_107515_assignsubmission_file_assig3-20172115.rkt"
+			],
+			[
+				"anmol",
+				"submissions/20172099_Anmol Chauhan_107474_assignsubmission_file_assign3-20172099.rkt"
+			],
+			[
+				"moss",
+				"moss"
+			],
+			[
+				"harpre",
+				"submissions/20172115_Harpreet Singh Arora_107515_assignsubmission_file_assig3-20172115.rkt"
+			],
+			[
+				"rohit",
+				"submissions/20172054_Rohit Sharma_107495_assignsubmission_file_assign3-20172054.rkt"
+			],
+			[
+				"harpree",
+				"submissions/20172115_Harpreet Singh Arora_107515_assignsubmission_file_assig3-20172115.rkt"
+			],
+			[
+				"mos",
+				"moss"
+			],
+			[
+				"20172099",
+				"submissions/20172099_Anmol Chauhan_107474_assignsubmission_file_assign3-20172099.rkt"
+			],
+			[
+				"rohot",
+				"submissions/20172054_Rohit Sharma_107495_assignsubmission_file_assign3-20172054.rkt"
+			],
+			[
+				"201",
+				"submissions/201501065_Raghuvamshi Reddy_107490_assignsubmission_file_assign3-201501065.rkt"
+			],
+			[
+				"20161172",
+				"submissions/20161171_Devansh Gautam_107479_assignsubmission_file_assign3-20161171.rkt"
+			],
+			[
+				"20150118",
+				"submissions/201501184_Megh Parikh_107484_assignsubmission_file_assign3-201501184.rkt"
+			],
+			[
+				"refere",
+				"references.bib"
+			],
+			[
+				"tex",
+				"src.tex"
+			],
+			[
+				"referen",
+				"references.bib"
+			],
+			[
+				"re",
+				"references.bib"
+			],
+			[
+				"bib",
+				"references.bib"
+			],
+			[
+				".tex",
+				"paper-automatic-accelerator-generation-with-unified-memory.tex"
+			],
+			[
+				"apatb_execute",
+				"solution1/sim/wrapc_pc/apatb_execute.cpp"
+			],
+			[
+				"test",
+				"execute_test.cpp"
+			],
+			[
+				"ex",
+				"execute.cpp"
+			],
+			[
+				"jen",
+				"jenkins_hash.c"
+			],
+			[
+				"execu",
+				"execute.c"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 650.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/iiit/subject-notes/physics/physics-notes.sublime-project"
+			]
+		],
+		"width": 494.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 361.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
