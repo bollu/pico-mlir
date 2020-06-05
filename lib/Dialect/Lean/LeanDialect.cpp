@@ -31,6 +31,9 @@ LeanDialect::LeanDialect(mlir::MLIRContext *context)
 #include "Dialect/Lean/LeanOps.cpp.inc"
       >();
 
+  // addInterfaces<ToyInlinerInterface>();
+  addTypes<StructType>();
+
   // Allow Lean operations to exist in their generic form
   allowUnknownOperations();
 }
@@ -107,7 +110,6 @@ StructType StructType::get(llvm::ArrayRef<mlir::Type> elementTypes) {
 
   assert(ctx && "invalid ctx");
   StructType st = Base::get(ctx, LeanTypes::Struct, elementTypes);
-  assert(false && "FUBAR");
   return st;
 
 }
