@@ -53,9 +53,10 @@ struct StructTypeStorage;
 
 /// Create a local enumeration with all of the types that are defined by Toy.
 namespace LeanTypes {
-enum Types {
-  Struct = mlir::Type::FIRST_TOY_TYPE,
-};
+  enum Types {
+    Struct = mlir::Type::FIRST_TOY_TYPE,
+    Simple,
+  };
 } // end namespace ToyTypes
 
 
@@ -84,6 +85,32 @@ public:
   /// Returns the number of element type held by this struct.
   size_t getNumElementTypes() { return getElementTypes().size(); }
 };
+
+/// This class defines a simple parameterless type. All derived types must
+/// inherit from the CRTP class 'Type::TypeBase'. It takes as template
+/// parameters the concrete type (SimpleType), and the base class to use (Type).
+/// 'Type::TypeBase' also provides several utility methods to simplify type
+/// construction.
+class SimpleType : public Type::TypeBase<SimpleType, Type> {
+public:
+  /// Inherit some necessary constructors from 'TypeBase'.
+  using Base::Base;
+
+  /// This static method is used to support type inquiry through isa, cast,
+  /// and dyn_cast.
+  static bool kindof(unsigned kind) { return kind == LeanTypes::Simple; }
+
+  /// This method is used to get an instance of the 'SimpleType'. Given that
+  /// this is a parameterless type, it just needs to take the context for
+  /// uniquing purposes.
+  static SimpleType get(MLIRContext *context) {
+    // Call into a helper 'get' method in 'TypeBase' to get a uniqued instance
+    // of this type.
+    return Base::get(context, LeanTypes::Simple);
+  }
+};
+
+
 
 
 } // end namespace lean

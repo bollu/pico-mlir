@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Struct",
+				"StructType"
+			],
+			[
 				"DumpMLR",
 				"DumpMLIRLLVM"
 			],
@@ -75,6 +79,121 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/include/toy/Dialect.h",
+			"settings":
+			{
+				"buffer_size": 3906,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "CMakeLists.txt",
+			"settings":
+			{
+				"buffer_size": 2000,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 148 files for \"addOperations\" (case sensitive)\n\n/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/mlir/Dialect.cpp:\n   78  /// point of registration of custom types and operations for the dialect.\n   79  ToyDialect::ToyDialect(mlir::MLIRContext *ctx) : mlir::Dialect(\"toy\", ctx) {\n   80:   addOperations<\n   81  #define GET_OP_LIST\n   82  #include \"toy/Ops.cpp.inc\"\n\n/home/bollu/work/mlir/musquared/build/bin/lean-opt:\n    <binary>\n\n/home/bollu/work/mlir/musquared/lib/Dialect/Lean/LeanDialect.cpp:\n   27      : Dialect(getDialectNamespace(), context) {\n   28  \n   29:   addOperations<\n   30  #define GET_OP_LIST\n   31  #include \"Dialect/Lean/LeanOps.cpp.inc\"\n\n30 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 704,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/mlir/Dialect.cpp",
+			"settings":
+			{
+				"buffer_size": 22841,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/Dialect/Lean/LeanDialect.h",
+			"settings":
+			{
+				"buffer_size": 4058,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/Dialect/Lean/LeanOps.h",
+			"settings":
+			{
+				"buffer_size": 1293,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/mkio.mlir",
+			"settings":
+			{
+				"buffer_size": 140,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "class=\"css-txat8w expqaej1\"\ncss-txat8w expqaej1\n",
+			"settings":
+			{
+				"buffer_size": 48,
+				"line_ending": "Unix",
+				"name": "class=\"css-txat8w expqaej1\""
+			}
+		},
+		{
+			"contents": "function assert_precondition(t, out = {}, tstart = 0) {\n    console.assert(typeof(t) === \"number\");\n    console.assert(typeof(out) === \"object\");\n    console.assert(typeof(tstart) === \"number\");\n    console.assert(t >= tstart);\n    return [out, tstart];\n}\n\nfunction anim\n_delay(duration) {\n    console.assert(typeof(duration) === \"number\");\n    let f = function(t, out, tstart) { \n        [out, tstart] = assert_precondition(t, out, tstart); return out;\n    }\n    f.duration = duration;\n    f.par = ((g) => anim_parallel(f, g));\n    f.seq = ((g) => anim_sequence(f, g));\n    return f;\n}\n\nfunction anim_const(field, v) {\n    let f = function(t, out, tstart) {\n        [out, tstart] = assert_precondition(t, out, tstart); out[field] = v; return out;\n    };\n    f.duration = 0;\n    f.par = ((g) => anim_parallel(f, g));\n    f.seq = ((g) => anim_sequence(f, g));\n    return f;\n}\n\nfunction ease_linear(vstart, tlin, vend) { return (1.0 - tlin) * vstart + tlin * vend; }\n\nfunction ease_cubic(vstart, tlin, vend) {\n    const cube = (1 - tlin)**3; return cube * vstart + (1 - cube) * vend;\n}\nfunction ease_out_back(vstart, tlin, vend) {\n    const c1 = 1.70158; const c3 = c1 + 1; const t = 1 + c3 * Math.pow(tlin - 1, 3) + c1 * Math.pow(tlin - 1, 2);\n    return (1-t) * vstart + t*vend;\n}\n\n                                        \nfunction anim_interpolated(fease, field, vend, duration) {\n    let f =  function(t, out, tstart) {\n        [out, tstart] = assert_precondition(t, out, tstart);\n        if (t < tstart + duration && duration !== 0) {\n            const tlin = (t - tstart) /duration;\n            console.assert(tlin >= 0);\n            console.assert(tlin <= 1);\n            const vstart = out[field];\n            out[field] = fease(vstart, tlin, vend);\n        } else { out[field] = vend; }\n        return out;\n    };\n    f.duration = duration;\n    f.par = ((g) => anim_parallel(f, g));\n    f.seq = ((g) => anim_sequence(f, g));\n    return f;\n\n}\n\nfunction anim_sequence(anim1, anim2) {\n    const duration = anim1.duration + anim2.duration;\n    let f =  function(t, out, tstart) {\n        [out, tstart] = assert_precondition(t, out, tstart);\n        anim1(t, out, tstart);\n        if (t >= tstart + anim1.duration) { anim2(t, out, tstart + anim1.duration); }\n        return out;\n    }\n    f.duration = duration;\n    f.par = ((g) => anim_parallel(f, g));\n    f.seq = ((g) => anim_sequence(f, g));\n    return f;\n}\n\nfunction anim_parallel(anim1, anim2) {\n    const duration = Math.max(anim1.duration, anim2.duration);\n    let f =  function(t, out, tstart) {\n        [out, tstart] = assert_precondition(t, out, tstart);\n        if (t >= tstart) { anim1(t, out, tstart); anim2(t, out, tstart); }\n        return out;\n    }\n    f.duration = duration;\n    f.par = ((g) => anim_parallel(f, g));\n    f.seq = ((g) => anim_sequence(f, g));\n    return f;\n}\n\nfunction anim_parallel_list(xs) { var x = xs[0]; for(var i = 1; i < xs.length; ++i) { x = x.par(xs[i]); } return x; }\nfunction anim_sequence_list(xs) { var x = xs[0]; for(var i = 1; i < xs.length; ++i) { x = x.seq(xs[i]); } return x; }\n\nfunction anim_stagger(xs, delta) {\n    console.assert(typeof(delta) == \"number\");\n    var ys = [];\n    for(var i = 0; i < xs.length; ++i) {\n        ys.push(anim_delay(delta*i).seq(xs[i]));\n    }\n    var y = ys[0];\n    for(var i = 1; i < ys.length; ++i) {\n        y = y.par(ys[i]);\n    }\n    return y;\n}\n",
+			"file": "/home/bollu/work/mathemagic/declarative/minanim.js",
+			"file_size": 3386,
+			"file_write_time": 132358399396805379,
+			"settings":
+			{
+				"buffer_size": 3387,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/bollu/blog/README.md",
+			"settings":
+			{
+				"buffer_size": 464078,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\nFor example, what is `dM/dN` where `M, N` are matrices? it's a 4D object where `D[i][j][k][l] = dM[i][j] / dN[k][l]`. \n\n\nWhat I prefer to do (and how one would derive the matrix cookbook), is to follow the rules:\n\n0. We wish to compute `dX/dY` where `X, Y` are scalars/vectors/matrices/higher dimensional. I will call `X` the numerator, `Y` the denominator.\n1. Write both numerator and denominator, fully indexed. Example, a vector `v = v[i]`, matrix `M =[i][j]` \n2. ",
+			"settings":
+			{
+				"buffer_size": 468,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\nFor example, what is `dM/dN` where `M, N` are matrices? it's a 4D object where `D[i][j][k][l] = dM[i][j] / dN[k][l]`. \n\n\nWhat I prefer to do (and how one would derive the matrix cookbook), is to follow the rules:\n\n0. We wish to compute `dX/dY` where `X, Y` are scalars/vectors/matrices/higher dimensional. I will call `X` the numerator, `Y` the denominator.\n1. Write both numerator and denominator, fully indexed. Example, a vector `v = v[i]`, matrix `M =[i][j]` \n2. ",
+			"settings":
+			{
+				"buffer_size": 468,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/Dialect/Lean/LeanDialect.cpp",
+			"settings":
+			{
+				"buffer_size": 6619,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -132,6 +251,14 @@
 		"selected_items":
 		[
 			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"C+",
+				"Set Syntax: C++"
+			],
+			[
 				"tabs",
 				"Indentation: Convert to Tabs"
 			],
@@ -154,10 +281,6 @@
 			[
 				"toggle side",
 				"View: Toggle Side Bar"
-			],
-			[
-				"C++",
-				"Set Syntax: C++"
 			],
 			[
 				"to spaces",
@@ -445,11 +568,31 @@
 	"expanded_folders":
 	[
 		"/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7",
-		"/home/bollu/work/mlir/musquared"
+		"/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/include",
+		"/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/include/toy",
+		"/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/mlir",
+		"/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/parser",
+		"/home/bollu/work/mlir/musquared",
+		"/home/bollu/work/mlir/musquared/include",
+		"/home/bollu/work/mlir/musquared/include/Dialect",
+		"/home/bollu/work/mlir/musquared/include/Dialect/Lean",
+		"/home/bollu/work/mlir/musquared/lean-opt",
+		"/home/bollu/work/mlir/musquared/lib",
+		"/home/bollu/work/mlir/musquared/lib/Dialect",
+		"/home/bollu/work/mlir/musquared/lib/Dialect/Lean"
 	],
 	"file_history":
 	[
+		"/home/bollu/work/mlir/musquared/include/Dialect/Lean/LeanOps.td",
+		"/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/include/toy/CMakeLists.txt",
+		"/home/bollu/work/mlir/musquared/include/Dialect/Lean/CMakeLists.txt",
+		"/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/include/toy/Ops.td",
+		"/home/bollu/work/mlir/musquared/build/include/Dialect/Lean/LeanOps.cpp.inc",
+		"/home/bollu/work/mlir/musquared/include/Dialect/Lean/LeanBase.td",
+		"/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/mlir/Dialect.cpp",
 		"/home/bollu/work/mlir/pico-mlir/makefile",
+		"/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/include/toy/Parser.h",
+		"/home/bollu/work/mlir/musquared/lib/Dialect/Lean/LeanDialect.cpp",
 		"/home/bollu/work/mlir/mlir-lean/lean-opt/CMakeLists.txt",
 		"/home/bollu/work/leanmlir/llvm-project/mlir/cmake/modules/AddMLIR.cmake",
 		"/home/bollu/work/leanmlir/llvm-project/mlir/tools/mlir-opt/CMakeLists.txt",
@@ -567,26 +710,18 @@
 		"/home/bollu/work/leanmlir/einstein/examples/apl.ein",
 		"/home/bollu/work/toy/include/toy/Ops.cpp.inc",
 		"/home/bollu/work/toy/mlir/Dialect.cpp",
-		"/home/bollu/work/leanmlir/llvm-project/mlir/examples/toy/Ch2/CMakeLists.txt",
-		"/home/bollu/work/IIIT-H-Code/ds3/erl_crash.dump",
-		"/home/bollu/floobits/davean/machines/as_preplan.hs",
-		"/home/bollu/Downloads/github-recovery-codes (3).txt",
-		"/home/bollu/Downloads/github-recovery-codes.txt",
-		"/home/bollu/floobits/davean/machines/src/Data/Machine/Plan.hs",
-		"/home/bollu/floobits/davean/machines/src/Data/Machine/Pipe.hs",
-		"/home/bollu/floobits/davean/machines/src/Data/Machine/Stack.hs",
-		"/home/bollu/floobits/davean/machines/src/Data/Machine.hs",
-		"/home/bollu/floobits/davean/machines/src/Data/Machine/Is.hs"
+		"/home/bollu/work/leanmlir/llvm-project/mlir/examples/toy/Ch2/CMakeLists.txt"
 	],
 	"find":
 	{
-		"height": 42.0
+		"height": 47.0
 	},
 	"find_in_files":
 	{
 		"height": 334.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -594,6 +729,51 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"img",
+			"400",
+			"<img",
+			"Odd partitions,",
+			"structType",
+			"addOperations",
+			"addToSet",
+			"GET_OP_CLASSES",
+			"MLIR_DIALECT_LEAN_LEANOPS",
+			"TOY_OPS",
+			"MLIR_DIALECT_LEAN_LEANOPS",
+			"Ops.td",
+			"add_mlir_dialect",
+			"-gen-op-decls",
+			"Ops.h.inc",
+			"LeanOps",
+			"LeanBase",
+			"GET_OP_CLASSES",
+			"Base",
+			"LeanBase",
+			"addOperations",
+			"addToSet",
+			"addSymbol",
+			"StructType::get",
+			"Toy_Type",
+			"getFieldTypeName",
+			"isLeanProgram",
+			"isLeanFunction",
+			"getLeanFunctionAttrName",
+			"getDialectNamespace",
+			"printer",
+			"symbol is not registered",
+			"ToyDialect",
+			"parseType",
+			"struct",
+			"toy",
+			"StructTypeStorage",
+			"struct",
+			"ToyTypes",
+			"LeanType",
+			"StructTypeStorage",
+			"struct",
+			"StructType",
+			"struct",
+			"Toy_StructType"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -611,14 +791,415 @@
 	"groups":
 	[
 		{
+			"selected": 11,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/include/toy/Dialect.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3906,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3062,
+								3062
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2002.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "CMakeLists.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2000,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1139,
+								1139
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 720.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 704,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										307,
+										320
+									],
+									[
+										588,
+										601
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								318,
+								318
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/bollu/work/mlir/llvm-project/mlir/examples/toy/Ch7/mlir/Dialect.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22841,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22423,
+								22423
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13386.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "include/Dialect/Lean/LeanDialect.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3278,
+								3278
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1914.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "include/Dialect/Lean/LeanOps.h",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1174,
+								1174
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "test/mkio.mlir",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 48,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48,
+								48
+							]
+						],
+						"settings":
+						{
+							"auto_name": "class=\"css-txat8w expqaej1\"",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/home/bollu/work/mathemagic/declarative/minanim.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3387,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								271,
+								271
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/bollu/blog/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 464078,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 6673.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 468,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								468,
+								468
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 468,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								468,
+								468
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "lib/Dialect/Lean/LeanDialect.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3900,
+								3900
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4485.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 42.0
+		"height": 35.0
 	},
 	"input":
 	{
@@ -659,7 +1240,7 @@
 	"project": "musquared.sublime-project",
 	"replace":
 	{
-		"height": 80.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -668,6 +1249,42 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"LeanDia",
+				"musquared/include/Dialect/Lean/LeanDialect.h"
+			],
+			[
+				"LeanOps.cpp",
+				"musquared/build/include/Dialect/Lean/LeanOps.cpp.inc"
+			],
+			[
+				"ToyOps.",
+				"Ch7/include/toy/Ops.td"
+			],
+			[
+				"Lean.Op",
+				"musquared/build/include/Dialect/Lean/LeanOps.cpp.inc"
+			],
+			[
+				"Ops.cpp",
+				"musquared/build/include/Dialect/Lean/LeanOps.cpp.inc"
+			],
+			[
+				"mkio",
+				"musquared/test/mkio.mlir"
+			],
+			[
+				"mki",
+				"musquared/test/mkio.mlir"
+			],
+			[
+				"Diae",
+				"musquared/lib/Dialect/Lean/LeanDialect.cpp"
+			],
+			[
+				"LeanBase",
+				"musquared/include/Dialect/Lean/LeanBase.td"
+			],
 			[
 				"READ",
 				"pico-mlir/README.md"
@@ -1143,42 +1760,6 @@
 			[
 				"tex",
 				"src.tex"
-			],
-			[
-				"referen",
-				"references.bib"
-			],
-			[
-				"re",
-				"references.bib"
-			],
-			[
-				"bib",
-				"references.bib"
-			],
-			[
-				".tex",
-				"paper-automatic-accelerator-generation-with-unified-memory.tex"
-			],
-			[
-				"apatb_execute",
-				"solution1/sim/wrapc_pc/apatb_execute.cpp"
-			],
-			[
-				"test",
-				"execute_test.cpp"
-			],
-			[
-				"ex",
-				"execute.cpp"
-			],
-			[
-				"jen",
-				"jenkins_hash.c"
-			],
-			[
-				"execu",
-				"execute.c"
 			]
 		],
 		"width": 0.0
