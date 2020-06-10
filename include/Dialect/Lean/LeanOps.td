@@ -48,10 +48,10 @@ class Lean_Op<string mnemonic, list<OpTrait> traits = []> :
 // Provide a definition for the Toy StructType for use in ODS. This allows for
 // using StructType in a similar way to Tensor or MemRef.
 def Lean_StructType :
-    Type<CPred<"$_self.isa<StructType>()">, "Toy struct type">;
+    Type<CPred<"$_self.isa<StructType>()">, "Lean struct type">;
 
 def Lean_SimpleType :
-    Type<CPred<"$_self.isa<SimpleType>()">, "Toy simple type">;
+    Type<CPred<"$_self.isa<SimpleType>()">, "Lean simple type">;
 
 // Provide a definition of the types that are used within the Toy dialect.
 def Lean_Type : AnyTypeOf<[F64Tensor, Lean_StructType, Lean_SimpleType]>;

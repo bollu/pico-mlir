@@ -26,14 +26,18 @@ using namespace mlir::lean;
 LeanDialect::LeanDialect(mlir::MLIRContext *context)
     : Dialect(getDialectNamespace(), context) {
 
+
+  // addInterfaces<ToyInlinerInterface>();
+  addTypes<StructType, SimpleType>();
+
   addOperations<
 #define GET_OP_LIST
 #include "Dialect/Lean/LeanOps.cpp.inc"
       >();
 
-  // addInterfaces<ToyInlinerInterface>();
-  addTypes<StructType>();
 
+  // addTypes<SimpleType>();
+  
   // Allow Lean operations to exist in their generic form
   allowUnknownOperations();
 }
@@ -132,9 +136,31 @@ mlir::Type LeanDialect::parseType(mlir::DialectAsmParser &parser) const {
   // value on failure to allow for chaining, but may be used with explicit
   // `mlir::failed/mlir::succeeded` as desired.
 
+  llvm::errs () << "current location:\nvvvvv\n" << parser.getCurrentLocation().getPointer() << "\n^^^^^\n";
+
+  
+  if(!strcmp(parser.getCurrentLocation().getPointer(), "simple")) { 
+      parser.parseKeyword("simple");
+      SimpleType t = SimpleType::get(parser.getBuilder().getContext());
+      llvm::errs() << "\tParsed a rawtype!: |" << t.getKind() << " ~= " << LeanTypes::Simple <<  "|\n";
+      return t;
+  } else {
+    llvm::errs() << "\tFailed at parsing a simple type\n";
+  }
+
   // Parse: `struct` `<`
   if (parser.parseKeyword("struct") || parser.parseLess())
     return Type();
+
+
+ 
+  // SimpleType st;
+  // if (parser.parseType<SimpleType>(st)) {
+  //   return st;
+  // }
+
+  // assert(false && "trying to parse");
+  
 
   // Parse the element types of the struct.
   SmallVector<mlir::Type, 1> elementTypes;
@@ -167,11 +193,17 @@ mlir::Type LeanDialect::parseType(mlir::DialectAsmParser &parser) const {
 /// Print an instance of a type registered to the toy dialect.
 void LeanDialect::printType(mlir::Type type,
                            mlir::DialectAsmPrinter &printer) const {
-  // Currently the only toy type is a struct type.
-  StructType structType = type.cast<StructType>();
 
-  // Print the struct type according to the parser format.
-  printer << "struct<";
-  mlir::interleaveComma(structType.getElementTypes(), printer);
-  printer << '>';
+  if(StructType structType = type.dyn_cast<StructType>()) {
+    // Print the struct type according to the parser format.
+    printer << "struct<";
+    mlir::interleaveComma(structType.getElementTypes(), printer);
+    printer << '>';
+  } else if(SimpleType simpleType = type.dyn_cast<SimpleType>()) {
+    printer << "simple";
+  } else {
+    llvm::errs() << "unknown tuype: |" << type << "|\n";
+    printer << "UNK\n";
+    assert(false);
+  }
 }
