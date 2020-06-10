@@ -1,3 +1,9 @@
+# sublime workspace.
+*sublime-workspace
+.vscode
+musquared.code-workspace
+build
+
 .idea/
 compile_commands.json
 build
@@ -61,4 +67,9 @@ Session.vim
 *~
 # Auto-generated tag files
 tags
+
+*.sublime-workspace
+.vscode
+musquared.code-workspace
+build
 
