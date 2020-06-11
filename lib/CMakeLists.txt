@@ -9,8 +9,8 @@ set(LIBS
 
 add_llvm_library(MLIRLean
   LeanDialect.cpp
-  LeanOps.cpp
-  LeanTypes.cpp
+  # LeanOps.cpp
+  # LeanTypes.cpp
 
   ADDITIONAL_HEADER_DIRS
   ${PROJECT_SOURCE_DIR}/include/Dialect/Lean

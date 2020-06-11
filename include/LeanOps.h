@@ -1,7 +1,7 @@
 #ifndef MLIR_DIALECT_LEAN_LEANOPS_H
 #define MLIR_DIALECT_LEAN_LEANOPS_H
 
-#include "Dialect/Lean/LeanTypes.h"
+#include "LeanTypes.h"
 #include "mlir/IR/Attributes.h"
 #include "mlir/IR/Function.h"
 #include "mlir/IR/MLIRContext.h"

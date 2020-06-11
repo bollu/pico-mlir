@@ -19,8 +19,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-#include "Dialect/Lean/LeanDialect.h"
-#include "Dialect/Lean/Passes.h"
+#include "LeanDialect.h"
 #include "mlir/Analysis/Passes.h"
 #include "mlir/Conversion/StandardToLLVM/ConvertStandardToLLVMPass.h"
 #include "mlir/InitAllDialects.h"
