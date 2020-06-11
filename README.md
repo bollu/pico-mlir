@@ -8,4 +8,7 @@
 - [SPIR-V dialect header](https://github.com/bollu/mlir/blob/master/include/mlir/Dialect/SPIRV/SPIRVDialect.h)
 - [SPIR-V dialect cpp](https://github.com/bollu/mlir/blob/master/lib/Dialect/SPIRV/SPIRVDialect.cpp)
 
+### Round tripping
 
+- What stops someone from defining a printer that is completely different
+  from what the parser wants?
