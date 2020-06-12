@@ -1,5 +1,4 @@
 #include "LeanDialect.h"
-#include "LeanOps.h"
 #include "mlir/IR/Attributes.h"
 #include "mlir/IR/Builders.h"
 #include "mlir/IR/DialectImplementation.h"
@@ -31,7 +30,7 @@ LeanDialect::LeanDialect(mlir::MLIRContext *context)
 
   addOperations<
 #define GET_OP_LIST
-#include "Dialect/Lean/LeanOps.cpp.inc"
+#include "LeanOps.cpp.inc"
       >();
 
 
