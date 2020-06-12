@@ -8,14 +8,6 @@
 namespace mlir {
 namespace lean {
 
-// Constant used to mark unused dimensions of lower dimensional fields
-constexpr static int64_t kIgnoreDimension = std::numeric_limits<int64_t>::min();
-
-// Constant dimension identifiers
-constexpr static int kIDimension = 0;
-constexpr static int kJDimension = 1;
-constexpr static int kKDimension = 2;
-
 class LeanDialect : public Dialect {
 public:
   explicit LeanDialect(MLIRContext *context);

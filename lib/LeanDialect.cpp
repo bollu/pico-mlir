@@ -1,6 +1,5 @@
 #include "LeanDialect.h"
 #include "LeanOps.h"
-#include "LeanTypes.h"
 #include "mlir/IR/Attributes.h"
 #include "mlir/IR/Builders.h"
 #include "mlir/IR/DialectImplementation.h"
