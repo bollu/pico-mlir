@@ -3,6 +3,7 @@
 - [Lioville function](https://en.wikipedia.org/wiki/Liouville_function)
 
 ### Good resources:
+
 - [SPIR-V dialect spec](https://github.com/bollu/mlir/blob/master/orig_docs/Dialects/SPIR-V.md)
 - [SPIR-V dialect base tablegen](https://github.com/bollu/mlir/blob/master/include/mlir/Dialect/SPIRV/SPIRVBase.td)
 - [SPIR-V dialect header](https://github.com/bollu/mlir/blob/master/include/mlir/Dialect/SPIRV/SPIRVDialect.h)
@@ -12,3 +13,11 @@
 
 - What stops someone from defining a printer that is completely different
   from what the parser wants?
+
+### TODO
+
+- [ ] Parse `case x of { ... }` style input.
+- [ ] Parse `let var = val in ...` input.
+- [ ] Add `PrimInt` type.
+- [ ] Get factorial up and running.
+- [ ] Get a notion of explicit GC. 
